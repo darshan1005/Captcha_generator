@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #ceb7fb;
+    font-family: 'Poppins',sans-serif;
+}
+
+.container {
+    padding: 20px;
+    width: 360px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 7px;
+    height: 300px;
+    transition: all .3s;
+    border: 1px solid black;
+    box-shadow: 0px 0px 8px 2px #864aff;
+}
+
+.container.active{
+    height: 370px;
+}
+
+.container .title{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    position: relative;
+    top: 7px;
+}
+
+.container .captcha_box{
+    height: 55px;
+    width: 270px;
+    border-radius: 5px;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 33px;
+}
+
+ .container .captcha_box img {
+    height: 55px;
+    width: 270px;
+    border-radius: 5px;
+    position: absolute;
+} 
+
+.container .captcha_box h4{
+    padding-top: 10px;
+    position: relative;
+    font-size: 23px;
+    letter-spacing: 2px;
+    color: lightgray;
+    text-decoration: line-through;
+    color: rgba(220, 220, 220, 0.826);
+    text-align: center;
+}
+
+.container input{
+    height: 32px;
+    width: 180px;
+    border: 1px solid gray;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+input::placeholder{
+    text-align: center;
+    color: rgb(136, 136, 136);
+}
+
+.container .check_bnt{
+    border: 1px solid black;
+    padding: 7px 17px;
+    border-radius: 5px;
+    background: brown;
+    color: white;
+    margin-left: 5.5px;
+}
+
+.container .generate_btn{
+    background: rgb(135, 184, 222);
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(117, 184, 236);
+    font-weight: 700;
+}
+.input-check-gene{
+    position: relative;
+    margin-top: 40px;
+}
+
+.container .message {
+    text-align: center;
+    margin-top: 16px;
+    font-size: 12px;
+    display: none;
+    transition: all .2s;
+}
+
+.container .message.incorrect{
+    color: red;
+    transition: all .2s;
+}
+
+.container .message.correct{
+    color: green;
+    transition: all .2s;
+}
+
+::selection{
+    background-color: rgb(100, 140, 0.8);
+    color: white;
+}
